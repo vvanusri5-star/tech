@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moi-Techch Valaiyadi Valaiyai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Header / Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 border-b border-gray-200 sticky top-0 bg-white z-50">
+        <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M3 4v16h18V4H3zm16 14H5v-3h14v3zm0-5H5v-2h14v2zm0-4H5V6h14v3z"/></svg>
+            <div>
+                <h1 class="text-lg font-bold text-blue-600 uppercase">Moi-Techch</h1>
+                <p class="text-xs text-blue-400 tracking-wide">VALAIYADI VALAIYAI...</p>
+            </div>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-gray-700 text-sm font-medium">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="#" class="hover:text-blue-600 transition">Moitech App</a>
+            <a href="#" class="hover:text-blue-600 transition">Contact Us</a>
+            <a href="#" class="hover:text-blue-600 transition">Login</a>
+            <a href="#" class="hover:text-blue-600 transition">Register</a>
+            <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition">தமிழ்</a>
+        </nav>
+    </header>
+
+    <!-- Main Banner Image -->
+    <main class="relative max-w-full overflow-hidden">
+        <img 
+            src="https://placehold.co/1600x600" 
+            alt="Traditional South Indian wedding scene with bride in elaborate gold jewelry and silk saree, groom dressed in traditional white and gold attire, surrounded by family members in festive outfits, colorful flower garlands and green leaves decor hanging from ceiling in a culturally rich decorated indoor space" 
+            class="w-full h-auto object-cover"
+            onerror="this.style.display='none';"
+        />
+        
+        <!-- Optional: Navigational arrows -->
+        <button 
+            aria-label="Previous image" 
+            class="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-30 text-white rounded-full p-2 hover:bg-opacity-60 focus:outline-none"
+        >
+            &#9664;
+        </button>
+        <button 
+            aria-label="Next image" 
+            class="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-30 text-white rounded-full p-2 hover:bg-opacity-60 focus:outline-none"
+        >
+            &#9654;
+        </button>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moitech - Objectives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .logo-text {
+            font-weight: 900;
+            color: #2158d1;
+            font-size: 20px;
+            line-height: 1;
+        }
+        .logo-subtext {
+            font-size: 12px;
+            color: #2667BC;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+        nav {
+            margin-left: auto;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+        nav button {
+            background-color: #2158d1;
+            border: none;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .content {
+            max-width: 960px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .content h2 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+        .content p {
+            color: gray;
+            margin-top: 8px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .objectives {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .objective-item {
+            width: 30%;
+            min-width: 280px;
+            text-align: center;
+        }
+        .objective-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .caption {
+            margin-top: 10px;
+            background-color: #3a83cd;
+            color: #b3e0f8;
+            font-weight: 700;
+            padding: 6px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        @media(max-width: 768px) {
+            .objectives {
+                flex-direction: column;
+                align-items: center;
+            }
+            .objective-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/rFV1GbL.png" alt="Moitech Logo" />
+            <div>
+                <div class="logo-text">MOI-TECCH</div>
+                <div class="logo-subtext">VALAIYADI VALAIYAI...</div>
+            </div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Moitech App</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <button>தமிழ்</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Objectives of Moitech</h2>
+        <p>Do moi !!! Let's get moi !!!<br />
+        Preserve our culture in a modern way.<br /><br />
+        Our moi-tech towards the new dimension of modern culture.</p>
+        <section class="objectives">
+            <div class="objective-item">
+                <img src="https://i.imgur.com/5fnYSXL.png" alt="Moi @ Computer" />
+                <div class="caption">Moi @ Computer</div>
+            </div>
+            <div class="objective-item">
+                <img src="https://i.imgur.com/upSMVBD.png" alt="Renewing Old Moi Notes" />
+                <div class="caption">Renewing Old Moi Notes</div>
+            </div>
+            <div class="objective-item">
+                <img src="https://i.imgur.com/53VXYJF.png" alt="Moi in Your Hands" />
+                <div class="caption">Moi in Your Hands</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moi-Tech Special Features</title>
+<style>
+  /* Reset some default margin and padding */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa;
+  }
+
+  /* Header styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px #ccc;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Placeholder icon as shown in screenshot */
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  /* Use SVG for the left logo shape */
+  .logo-icon svg {
+    fill: #1e3aeb; /* dark blue */
+  }
+
+  .logo-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1e3aeb;
+    letter-spacing: 1px;
+  }
+  .logo-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #1e3aeb;
+    letter-spacing: 0.5px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  nav a:hover {
+    color: #1e3aeb;
+  }
+
+  .lang-btn {
+    background-color: #1e3aeb;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* Main container */
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Center icon above title */
+  .main-icon {
+    width: 40px;
+    margin-bottom: 8px;
+    fill: #26c1ff;
+  }
+
+  main h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  /* Features grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 25px;
+    justify-items: center;
+  }
+
+  .feature {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+    fill: #333;
+  }
+
+  .feature-text {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon" aria-label="Moi-Tech Logo">
+        <!-- Icon similar to the hand & crown currency symbol -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" >
+          <path d="M20 52v-6h24v6h8v-36H36l-4-10-4 10H12v36zm4-28h16v6H24v-6z" />
+        </svg>
+      </div>
+      <div class="logo-text">
+        <h1>MOI-TECCH</h1>
+        <p>VALAIYADI VALAIYAI...</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Moitech App</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <button class="lang-btn">தமிழ்</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Blue ornamental icon -->
+    <svg class="main-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" >
+      <path d="M32 12s-12 12-12 20 5 14 12 14 12-6 12-14-12-20-12-20zM20 24h24" />
+    </svg>
+
+    <h2>Moi-Tecch Special Features</h2>
+
+    <section class="features-grid">
+      
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <path d="M32 6v28m0 0l-8-8m8 8l8-8M12 54h40v4H12zM16 42v10h32V42z"/>
+        </svg>
+        <p class="feature-text">Manage Moi Accounts in Online</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="16" y="12" width="32" height="6" rx="2"/>
+          <rect x="16" y="26" width="32" height="6" rx="2"/>
+          <rect x="16" y="40" width="32" height="6" rx="2"/>
+        </svg>
+        <p class="feature-text">Facility to Add or Update MOI's</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <circle cx="30" cy="24" r="12"/>
+          <path d="M42 40l10-10" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <p class="feature-text">Details of The Individual's MOI</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <ellipse cx="22" cy="32" rx="16" ry="14" fill="none" stroke="#000" stroke-width="4"/>
+          <text x="14" y="36" font-size="14" font-weight="700" fill="#000">SMS</text>
+        </svg>
+        <p class="feature-text">SMS Reminder of The Events</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="20" y="16" width="24" height="32" rx="4"/>
+          <line x1="20" y1="24" x2="44" y2="24" stroke="#000" stroke-width="3"/>
+          <line x1="20" y1="32" x2="44" y2="32" stroke="#000" stroke-width="3"/>
+          <line x1="20" y1="40" x2="44" y2="40" stroke="#000" stroke-width="3"/>
+          <path d="M20 48h24" stroke="#000" stroke-width="3"/>
+        </svg>
+        <p class="feature-text">Instant Computer Receipt for MOI</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <path d="M32 4a28 28 0 1 0 0 56 28 28 0 1 0 0-56z" fill="none" stroke="#000" stroke-width="4"/>
+          <path d="M16 40l16-16 8 8" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="feature-text">Analyze The Amount of MOI Giving / Received</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="20" y="12" width="24" height="40" rx="3" ry="3" />
+          <circle cx="32" cy="52" r="3" />
+          <rect x="24" y="20" width="16" height="4" />
+          <rect x="24" y="28" width="16" height="4" />
+          <rect x="24" y="36" width="16" height="4" />
+        </svg>
+        <p class="feature-text">Details of The Past/Future Events</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="18" y="18" width="28" height="28" rx="5" ry="5"/>
+          <rect x="26" y="26" width="12" height="12" rx="2" ry="2" fill="#111"/>
+          <path d="M20 46h24v4H20z"/>
+        </svg>
+        <p class="feature-text">Accurate MOI Calculation</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="26" y="20" width="12" height="24" rx="4" ry="4"/>
+          <circle cx="32" cy="48" r="3"/>
+        </svg>
+        <p class="feature-text">Details of The MOI in Your Mobile</p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <text x="20" y="28" font-size="16" font-weight="bold" fill="#000">A</text>
+          <line x1="32" y1="16" x2="32" y2="44" stroke="#000" stroke-width="3"/>
+          <polyline points="26 32 32 44 38 32" fill="none" stroke="#000" stroke-width="3"/>
+          <text x="26" y="56" font-size="16" font-weight="bold" fill="#000">Z</text>
+        </svg>
+        <p class="feature-text">Moi According to The City/Town Name</p>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moitech - Valaiyadi Valaiyai</title>
+<style>
+  /* Basic Reset and Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo-icon {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+  }
+  .logo-text {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0a47ed; /* blue */
+    line-height: 1.2;
+  }
+  .logo-text small {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #2e6cc2;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  nav ul li a.cta-button {
+    background-color: #0a47ed;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  /* Events Overview Section */
+  .events-section {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .decorative-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+  }
+  .events-section h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  
+  /* Events Grid */
+  .events-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .event-card {
+    width: 300px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .event-card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  /* Navigation arrows side */
+  .side-nav {
+    position: fixed;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a47ed;
+    cursor: pointer;
+    user-select: none;
+  }
+  .side-nav.left {
+    left: 10px;
+  }
+  .side-nav.right {
+    right: 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img class="logo-icon" src="https://i.ibb.co/htMvxWZ/moitech-logo-icon.png" alt="Moitech logo icon" />
+    <div>
+      <div class="logo-text">MOI-TECCH</div>
+      <small style="color:#2e6cc2; font-size:12px;">VALAIYADI VALAIYAI...</small>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Moitech App</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#" class="cta-button">தமிழ்</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Left & Right arrows -->
+<div class="side-nav left">&#60;</div>
+<div class="side-nav right">&#62;</div>
+
+<section class="events-section">
+  <img class="decorative-icon" src="https://i.ibb.co/QnF3GKN/event-icon.png" alt="Decorative Icon" />
+  <h2>Events Overview</h2>
+
+  <div class="events-grid">
+    <div class="event-card">
+      <img src="https://i.ibb.co/gSlKzxy/wedding-ceremony.jpg" alt="Wedding Ceremony" />
+      <div>Wedding Ceremony</div>
+    </div>
+    <div class="event-card">
+      <img src="https://i.ibb.co/h9XQLmr/engagement.jpg" alt="Engagement" />
+      <div>Engagement</div>
+    </div>
+    <div class="event-card">
+      <img src="https://i.ibb.co/M9tfkfP/ear-piercing-ceremony.jpg" alt="Ear Piercing Ceremony" />
+      <div>Ear Piercing Ceremony</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moitech Footer</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #0b0e1f;
+    color: #d7d7d7;
+    font-family: Arial, sans-serif;
+  }
+  .footer {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+  }
+  .footer-section h3 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  .footer-section ul li a {
+    color: #7b7b7b;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  .contact-info p,
+  .contact-info a {
+    font-size: 14px;
+    color: #7b7b7b;
+    margin: 6px 0;
+  }
+  .contact-info a {
+    text-decoration: none;
+  }
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  .contact-info .icon {
+    margin-right: 8px;
+  }
+  .google-play {
+    margin-bottom: 20px;
+  }
+  .google-play img {
+    max-width: 230px;
+    cursor: pointer;
+  }
+  .social-icons {
+    display: flex;
+    gap: 12px;
+  }
+  .social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    background-color: #171a2b;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+  }
+  .social-icons a:hover {
+    background-color: #007bff;
+  }
+  .copyright {
+    text-align: center;
+    color: #7b7b7b;
+    font-size: 13px;
+    padding: 12px 0;
+    border-top: 1px solid #222642;
+  }
+  /* Icons using Unicode for simplicity */
+</style>
+</head>
+<body>
+
+<footer>
+  <div class="footer">
+    <div class="footer-section company">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Moitech App</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h3>Contact us</h3>
+      <p><strong>📍 MOITECH</strong></p>
+      <p>1/177 A, Keren Schools</p>
+      <p>Opposite, K.Puliyankulam,</p>
+      <p>Chekkanurani Post,</p>
+      <p>Madurai District - 625 514</p>
+      <p>📞 +91-96888 80990</p>
+      <p>📞 +91-74484-30990</p>
+      <p>✉️ <a href="mailto:support@moitech.in" style="color:#7b7b7b;">support@moitech.in</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Download Moitech Android App</h3>
+      <div class="google-play">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+        </a>
+      </div>
+      <h4>Connect with us</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook" title="Facebook">f</a>
+        <a href="#" aria-label="Twitter" title="Twitter">t</a>
+        <a href="#" aria-label="Instagram" title="Instagram">📸</a>
+        <a href="#" aria-label="YouTube" title="YouTube">▶</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    Copyright © 2025 - Moitech | All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
